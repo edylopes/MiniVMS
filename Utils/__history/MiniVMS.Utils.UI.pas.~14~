@@ -1,0 +1,42 @@
+unit MiniVMS.Utils.UI;
+
+interface
+
+uses
+  Winapi.Windows,
+  Vcl.Controls;
+
+procedure SetRoundedCorners(
+  AControl: TWinControl;
+  ARadius: Integer = 12
+);
+
+implementation
+
+procedure SetRoundedCorners(
+  AControl: TWinControl;
+  ARadius: Integer
+);
+var
+  Region: HRGN;
+begin
+  if not Assigned(AControl) then
+    Exit;
+
+  Region := CreateRoundRectRgn(
+    0,
+    0,
+    AControl.Width,
+    AControl.Height,
+    ARadius,
+    ARadius
+  );
+
+  SetWindowRgn(
+    AControl.Handle,
+    Region,
+    True
+  );
+end;
+
+end.

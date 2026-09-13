@@ -1,0 +1,59 @@
+unit MiniVMS.Views.Main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.ToolWin,
+  Vcl.ComCtrls, Vcl.Imaging.pngimage, Vcl.BaseImageCollection,
+  Vcl.ImageCollection, System.ImageList, Vcl.ImgList,
+  MiniVMS.Views.SideBar, MiniVMS.Utils.UI, MiniVMS.Components.EditBase, Vcl.Skia,
+  MiniVMS.Application.Contracts.RtspPlayer;
+
+type
+  TfrmMain = class(TForm)
+    pnlHeader: TPanel;
+    pnlStatus: TPanel;
+    pnlMonitor: TPanel;
+    pnlSidebarContent: TPanel;
+
+
+    imageCollection: TImageCollection;
+    imageList: TImageList;
+    PanelStreamArea: TPanel;
+    Panel1: TPanel;
+    Image1: TImage;
+
+  procedure FormCreate(Sender: TObject);
+
+  private
+  { Private declarations }
+  FSidebar: TSideBarFrame;
+  FRtspPlayer: IRtspPlayer;
+
+  public
+    { Public declarations }
+  procedure SetRtspPlayer(
+      const ARtspPlayer: IRtspPlayer
+    );
+  end;
+
+  var frmMain: TfrmMain;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+
+    FSidebar := TSideBarFrame.Create(Self);
+    FSidebar.Parent := pnlSideBarContent;
+    FSideBar.ApplyStyle;
+    SetRoundedCorners(pnlMonitor);
+    SetRoundedCorners(pnlStatus);
+    SetRoundedCorners(PanelStreamArea);
+
+end;
+
+end.

@@ -1,0 +1,85 @@
+unit MiniVMS.Views.SideBar;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  MiniVMS.Utils.UI, Vcl.Buttons, Vcl.Skia;
+
+type
+
+  TSideBarFrame = class(TFrame)
+    pnlCardConection: TPanel;
+    ipLabel: TLabel;
+    plnConectionContainer: TPanel;
+    userLabel: TLabel;
+    urlRtspLabel: TLabel;
+    passwordLabel: TLabel;
+    laberPort: TLabel;
+
+    PanelIPDomain: TPanel;
+
+    PanelUsername: TPanel;
+    EditUsername: TEdit;
+
+    PanelRtspUrl: TPanel;
+    EditUrlRtsp: TEdit;
+
+    PanelPassword: TPanel;
+    EditPassword: TEdit;
+
+    PanelPort: TPanel;
+    EditPort: TEdit;
+    PanelActiveDevice: TPanel;
+    PanelDesactiveDevice: TPanel;
+    LabelConection: TLabel;
+    PanelServerConnection: TPanel;
+    ImgConnection: TImage;
+    EditIpDomain: TEdit;
+    PanelLastConections: TPanel;
+
+  private
+    { Private declarations }
+ // AControl: TWinControl;
+  procedure FrameCreate(Sender: TObject);
+  procedure RoundAllPanels(ARadius: Integer);
+
+  public
+    { Public declarations }
+    procedure ApplyStyle;
+  end;
+
+implementation
+
+{$R *.dfm}
+
+procedure TSideBarFrame.FrameCreate(Sender: TObject);
+
+begin
+    {Do something}
+    RoundAllPanels(12);
+end;
+
+procedure TSideBarFrame.ApplyStyle;
+begin
+
+   RoundAllPanels(12);
+
+end;
+
+procedure TSideBarFrame.RoundAllPanels(ARadius: Integer);
+  var I: Integer;
+
+    begin
+      for I := 0 to ComponentCount - 1 do
+      begin
+        if Components[I] is TPanel then
+          SetRoundedCorners(TPanel(Components[I]), ARadius);
+      end;
+    end;
+
+end.
+
+
+

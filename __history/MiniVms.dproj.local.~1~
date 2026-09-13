@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2026/09/06 22:14:17.014,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/09/06 22:15:25.046,C:\Users\ednei.silva\Documents\MiniVMS.pas=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/09/06 22:15:25.046,C:\Users\ednei.silva\Documents\MiniVMS.dfm=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/09/06 22:18:19.628,C:\Users\ednei.silva\Documents\MiniVMS.pas=</Transaction>
+    <Transaction>2026/09/06 22:18:48.011,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\MiniVms.dproj=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2026/09/06 22:25:36.270,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS.Views.Main.pas</Transaction>
+    <Transaction>2026/09/06 22:25:36.347,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS.Views.SideBar.pas</Transaction>
+    <Transaction>2026/09/06 22:40:27.696,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS.Views.Main.pas=</Transaction>
+    <Transaction>2026/09/06 22:40:27.749,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS.Views.SideBar.pas=</Transaction>
+    <Transaction>2026/09/06 22:43:43.700,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Views\MiniVMS.Views.Main.pas</Transaction>
+    <Transaction>2026/09/06 22:43:43.781,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Views\MiniVMS.Views.SideBar.pas</Transaction>
+    <Transaction>2026/09/06 22:47:07.531,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Unit1.pas</Transaction>
+    <Transaction>2026/09/06 22:52:47.141,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\OKCANCL2.pas</Transaction>
+    <Transaction>2026/09/06 22:53:13.335,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Utils\OKCANCL2.dfm=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\OKCANCL2.dfm</Transaction>
+    <Transaction>2026/09/06 22:53:13.335,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Utils\OKCANCL2.pas=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\OKCANCL2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

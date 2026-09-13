@@ -1,0 +1,159 @@
+object frmMain: TfrmMain
+  Left = 307
+  Top = 164
+  Margins.Left = 0
+  Margins.Top = 0
+  Margins.Right = 0
+  Margins.Bottom = 0
+  BiDiMode = bdLeftToRight
+  Caption = 'Mini VMS'
+  ClientHeight = 720
+  ClientWidth = 1219
+  Color = 2035976
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Padding.Left = 12
+  Padding.Top = 12
+  Padding.Right = 12
+  Padding.Bottom = 12
+  ParentBiDiMode = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  TextHeight = 21
+  object pnlMonitor: TPanel
+    Left = 348
+    Top = 86
+    Width = 861
+    Height = 524
+    Margins.Top = 10
+    BevelOuter = bvNone
+    Color = 2824717
+    ParentBackground = False
+    TabOrder = 0
+    TabStop = True
+    object PanelStreamArea: TPanel
+      Left = 13
+      Top = 48
+      Width = 836
+      Height = 464
+      Margins.Left = 0
+      Margins.Top = 0
+      Margins.Right = 0
+      Margins.Bottom = 0
+      BevelOuter = bvNone
+      Color = clBlack
+      ParentBackground = False
+      TabOrder = 0
+      object Panel1: TPanel
+        Left = 256
+        Top = 128
+        Width = 393
+        Height = 257
+        BevelOuter = bvNone
+        Caption = 'Panel1'
+        ParentColor = True
+        TabOrder = 0
+        object Image1: TImage
+          Left = 96
+          Top = 48
+          Width = 121
+          Height = 105
+          Picture.Data = {
+            0D54536B537667477261706869633C73766720786D6C6E733D22687474703A2F
+            2F7777772E77332E6F72672F323030302F737667222077696474683D22313038
+            22206865696768743D22313038222076696577426F783D223020302032342032
+            34222066696C6C3D226E6F6E6522207374726F6B653D22236666666666662220
+            7374726F6B652D77696474683D223222207374726F6B652D6C696E656361703D
+            22726F756E6422207374726F6B652D6C696E656A6F696E3D22726F756E642220
+            636C6173733D226C7563696465206C75636964652D766964656F223E3C706174
+            6820643D226D313620313320352E32323320332E343832612E352E3520302030
+            2030202E3737372D2E34313656372E3837612E352E352030203020302D2E3735
+            322D2E3433324C31362031302E35222F3E3C7265637420783D22322220793D22
+            36222077696474683D22313422206865696768743D223132222072783D223222
+            2F3E3C2F7376673E}
+        end
+      end
+    end
+  end
+  object pnlHeader: TPanel
+    Left = 0
+    Top = -29
+    Width = 1225
+    Height = 105
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    BevelOuter = bvNone
+    Caption = 'HEADER'
+    Color = 2824717
+    Ctl3D = True
+    ParentBackground = False
+    ParentCtl3D = False
+    TabOrder = 1
+  end
+  object pnlStatus: TPanel
+    Left = 348
+    Top = 616
+    Width = 861
+    Height = 81
+    BevelOuter = bvNone
+    Caption = 'Status'
+    Color = 2824717
+    ParentBackground = False
+    TabOrder = 2
+  end
+  object pnlSidebarContent: TPanel
+    Left = 12
+    Top = 86
+    Width = 333
+    Height = 611
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    BevelOuter = bvNone
+    Color = 2035976
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 3
+  end
+  object ImageCollection: TImageCollection
+    Images = <
+      item
+        Name = 'server'
+        SourceImages = <
+          item
+            Image.Data = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F400000131494441547801EC96618E41510C85DFCC22663D339359C210D6C01A
+              086B600D044B10ACC726385F6FAED413EF0F7D7EB8D2F656C93947EF4BF5B37A
+              F1AB2EE05B7A66F25590830D87E09379012395F6F281BC13E460C3019728AA2A
+              0B40D5C42AED04B8E0BC08F877BC7DE51F410EB6A0CD8C3377E0CB4A292CD311
+              123DB6716601F7D868D3CFBD0F9F516F1200390FCC4E447FF2106B1210425807
+              6D1270D09769FFAFCEAD3CC49A04408808AE813CC4B380A343EFB9FCD9A9C736
+              CE2C60E39816CA4F410EB6A0CD8C330BA0D5632BB713E082F33209A19D2AF0D0
+              CD75AE831C6C38E0124575258002AA864ABA410E361C824F96AF20BD7B41AC0B
+              60FAF19F5DF681E8CB28FB001D2EFB005DB81944566C33D4E780E766623136CB
+              3EE0BBF2685EF681DCC137DA07F493FD6E71B30F9C010000FFFF387D2CEA0000
+              00064944415403001BF7BC41C85A4E170000000049454E44AE426082}
+          end>
+      end>
+    Left = 1192
+    Top = 184
+  end
+  object ImageList: TImageList
+    Height = 32
+    Width = 32
+    Left = 1192
+    Top = 248
+  end
+end

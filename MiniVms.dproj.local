@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2026/09/06 22:14:17.000.014,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/09/06 22:15:25.000.046,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\ednei.silva\Documents\MiniVMS.dfm</Transaction>
+    <Transaction>2026/09/06 22:15:25.000.046,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ednei.silva\Documents\MiniVMS.pas</Transaction>
+    <Transaction>2026/09/06 22:18:19.000.628,C:\Users\ednei.silva\Documents\MiniVMS.pas=</Transaction>
+    <Transaction>2026/09/06 22:18:48.000.011,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\MiniVms.dproj</Transaction>
+    <Transaction>2026/09/06 22:25:36.000.347,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS.Views.SideBar.pas</Transaction>
+    <Transaction>2026/09/06 22:25:36.000.270,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS.Views.Main.pas</Transaction>
+    <Transaction>2026/09/06 22:40:27.000.696,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS.Views.Main.pas=</Transaction>
+    <Transaction>2026/09/06 22:40:27.000.749,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS.Views.SideBar.pas=</Transaction>
+    <Transaction>2026/09/07 12:36:42.000.369,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Unit1.pas</Transaction>
+    <Transaction>2026/09/07 12:40:14.000.886,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Utils\UI\MiniVMS.Utils.UI.pas=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Unit1.pas</Transaction>
+    <Transaction>2026/09/07 13:00:30.000.944,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Unit1.pas</Transaction>
+    <Transaction>2026/09/07 13:01:33.000.973,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Unit1.pas</Transaction>
+    <Transaction>2026/09/07 13:02:10.000.930,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Utils\MiniVMS.Utils.UI.pas</Transaction>
+    <Transaction>2026/09/07 13:49:47.000.443,=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Unit1.pas</Transaction>
+    <Transaction>2026/09/07 13:51:24.000.014,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Components\TEditBase.pas=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Unit1.pas</Transaction>
+    <Transaction>2026/09/07 13:55:28.000.190,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Components\MiniVMS.Components.TEditBase.pas=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Components\TEditBase.pas</Transaction>
+    <Transaction>2026/09/07 14:01:11.000.772,C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Components\MiniVMS.Components.EditBase.pas=C:\Users\ednei.silva\Documents\Embarcadero\Studio\Projects\MiniVMS\Components\MiniVMS.Components.TEditBase.pas</Transaction>
+  </Transactions>
+</BorlandProject>

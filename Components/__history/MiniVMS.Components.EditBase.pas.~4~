@@ -1,0 +1,51 @@
+unit MiniVMS.Components.EditBase;
+
+interface
+
+uses
+  System.Classes,
+  Vcl.Controls,
+  Vcl.StdCtrls,
+  Vcl.Graphics,
+  Vcl.Forms;
+
+type
+  TEditBase = class(TEdit)
+  public
+    constructor Create(AOwner: TComponent); override;
+  end;
+
+procedure Register;
+
+implementation
+
+constructor TEditBase.Create(AOwner: TComponent);
+begin
+  inherited Create(AOwner);
+
+  // Tamanho
+  AutoSize := False;
+  Height := 40;
+
+  // Aparência
+  Color := $00281E15;
+  BorderStyle := bsSingle;
+
+  // Fonte
+  Font.Name := 'Segoe UI';
+  Font.Size := 11;
+
+  // Texto
+  Alignment := taCenter;
+  AutoSelect := False;
+
+  // Navegação
+  TabStop := True;
+end;
+
+procedure Register;
+begin
+  RegisterComponents('MiniVMS', [TEditBase]);
+end;
+
+end.
