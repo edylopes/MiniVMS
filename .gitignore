@@ -1,0 +1,99 @@
+# Compilados
+*.exe
+*.dll
+*.bpl
+*.dcp
+*.dcu
+*.so
+*.apk
+*.ipa
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.dsk
+*.local
+*.identcache
+*.tvsconfig
+
+# Histórico do Delphi
+__history/
+*.~*
+*.ddp
+
+# Arquivos de desktop/sessão
+*.dsk
+*.skincfg
+
+# Output de compilação
+Win32/Debug/
+Win32/Release/
+Win64/Debug/
+Win64/Release/
+Debug/
+Release/
+
+# Packages
+*.dcpil
+
+# Arquivos do IDE
+*.rsm
+*.map
+*.mps
+*.mpt
+*.stat
+
+# Logs
+*.log
+
+# Arquivos de cache
+*.cache
+*.projdata
+
+# Informações locais do projeto
+*.local
+
+# Diretórios de build customizados
+bin/
+obj/
+
+# Deployment
+*.deployproj.local
+
+# PAServer
+*.users
+
+# Arquivos gerados pelo Android/iOS
+*.keystore
+*.jks
+
+# Test Insight
+*.testsettings
+
+# Backup criado pelo Delphi
+*.~pas
+*.~dfm
+*.~dpr
+*.~dpk
+*.~inc
+
+# Lazarus (caso utilize)
+lib/
+backup/
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Arquivos de configuração local
+*.env
+.env
+
+# Dependências de terceiros (opcional)
+# packages/
