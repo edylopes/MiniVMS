@@ -73,7 +73,7 @@ procedure TfrmMain.SidebarConnect(
 begin
   if not Assigned(FCameraStream) then
   begin
-    ShowMessage('Player não foi inicializado.');
+    ShowMessage('Player nï¿½o foi inicializado.');
     Exit;
   end;
     try

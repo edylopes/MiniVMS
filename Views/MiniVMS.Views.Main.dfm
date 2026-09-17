@@ -63,7 +63,7 @@ object frmMain: TfrmMain
         TabOrder = 0
         object Image1: TImage
           Left = 144
-          Top = -8
+          Top = 0
           Width = 121
           Height = 100
           Margins.Left = 0
