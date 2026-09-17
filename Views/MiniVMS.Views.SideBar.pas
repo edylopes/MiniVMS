@@ -5,7 +5,10 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  MiniVMS.Utils.UI, Vcl.Buttons, Vcl.Skia;
+  MiniVMS.Utils.UI, Vcl.Buttons,
+  Vcl.Skia,
+  MiniVMS.Application.Interfaces.RtspStream,
+  MiniVMS.Application.Interfaces.CameraStream;
 
 type
 
@@ -39,26 +42,54 @@ type
     EditIpDomain: TEdit;
     PanelLastConections: TPanel;
 
+    procedure FrameCreate(Sender: TObject);
+    procedure PanelActiveDeviceClick(Sender: TObject);
+    procedure PanelDesactiveDeviceClick(Sender: TObject);
+
   private
-    { Private declarations }
- // AControl: TWinControl;
-  procedure FrameCreate(Sender: TObject);
+
+  FCameraStream: ICameraStream;
+  FMonitorHandle: HWND;
+
   procedure RoundAllPanels(ARadius: Integer);
 
   public
-    { Public declarations }
+    constructor Create(
+      AOwner: TComponent;
+      ACameraStream: ICameraStream;
+      AMonitorHandle: HWND
+    ); reintroduce;
+
     procedure ApplyStyle;
+
   end;
 
 implementation
 
 {$R *.dfm}
 
+constructor TSidebarFrame.Create(
+  AOwner: TComponent;
+  ACameraStream: ICameraStream;
+  AMonitorHandle: HWND
+);
+
+begin
+  inherited Create(AOwner);
+
+  FCameraStream := ACameraStream;
+  FMonitorHandle := AMonitorHandle;
+
+  ApplyStyle;
+  RoundAllPanels(12);
+end;
+
 procedure TSideBarFrame.FrameCreate(Sender: TObject);
 
 begin
     {Do something}
-    RoundAllPanels(12);
+    ApplyStyle;
+
 end;
 
 procedure TSideBarFrame.ApplyStyle;
@@ -77,9 +108,31 @@ procedure TSideBarFrame.RoundAllPanels(ARadius: Integer);
         if Components[I] is TPanel then
            SetRoundedCorners(TPanel(Components[I]), ARadius);
       end;
+
     end;
 
+
+procedure  TSideBarFrame.PanelActiveDeviceClick(Sender: TObject);
+var
+  Url: string;
+begin
+  Url := Trim(EditUrlRtsp.Text);
+
+  if Url.IsEmpty then
+  begin
+   // ShowMessage('Informe a URL RTSP:');
+   // Exit;
+  end;
+
+  if Assigned(FCameraStream) then
+    FCameraStream.Connect(Url, FMonitorHandle);
+end;
+
+procedure TSideBarFrame.PanelDesactiveDeviceClick(Sender: TObject);
+var
+    Url: string;
+begin
+   {DO something}
+end;
+
 end.
-
-
-

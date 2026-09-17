@@ -1,0 +1,15 @@
+unit MiniVMS.Core.Interfaces.RtspStream;
+
+interface
+
+uses
+  MiniVMS.Aplication.Interfaces.CameraStream;
+
+type
+  IRtspStream = interface(ICameraStream)
+    ['{E12A9986-C41A-49E9-92F8-B2596BB625E7}']
+  end;
+
+implementation
+
+end.

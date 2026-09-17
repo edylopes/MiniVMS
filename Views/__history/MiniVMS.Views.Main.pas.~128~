@@ -1,0 +1,114 @@
+unit MiniVMS.Views.Main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.ToolWin,
+  Vcl.ComCtrls, Vcl.Imaging.pngimage, Vcl.BaseImageCollection,
+  Vcl.ImageCollection, System.ImageList, Vcl.ImgList,
+  MiniVMS.Utils.UI,
+  MiniVMS.Views.SideBar,
+  MiniVMS.Application.Interfaces.RtspStream,
+  MiniVMS.Application.Interfaces.CameraStream,
+  MiniVMS.Infrastructure.RtspStream,
+  Vcl.Skia;
+
+type
+  TfrmMain = class(TForm)
+    pnlHeader: TPanel;
+    pnlStatus: TPanel;
+    pnlMonitor: TPanel;
+    pnlSidebarContent: TPanel;
+
+
+    imageCollection: TImageCollection;
+    imageList: TImageList;
+    PanelStreamArea: TPanel;
+    Panel1: TPanel;
+    Image1: TImage;
+    videNone: TLabel;
+    editWatting: TLabel;
+    Image2: TImage;
+    PanalHeaderLeft: TPanel;
+    Label1: TLabel;
+    LabelMonitorVideo: TLabel;
+    Image3: TImage;
+    PanelMonitorVideo: TPanel;
+
+  procedure FormCreate(Sender: TObject);
+
+  private
+  { Private declarations }
+
+  FSidebar: TSideBarFrame;
+  FCameraStream: ICameraStream;
+
+  procedure SidebarConnect(
+      Sender: TObject;
+      const AUrl: string
+   );
+
+  public
+    { Public declarations }
+  procedure SetCameraStream(const ACameraStream: ICameraStream);
+
+end;
+
+  var frmMain: TfrmMain;
+
+implementation
+
+procedure TfrmMain.SetCameraStream(
+  const ACameraStream: ICameraStream
+);
+begin
+  FCameraStream := ACameraStream;
+end;
+
+
+procedure TfrmMain.SidebarConnect(
+  Sender: TObject;
+  const AUrl: string
+);
+begin
+  if not Assigned(FCameraStream) then
+  begin
+    ShowMessage('Player não foi inicializado.');
+    Exit;
+  end;
+    try
+      FCameraStream.Connect(
+        AUrl,
+        PanelStreamArea.Handle
+      );
+
+      except
+      on E: Exception do
+      ShowMessage(
+        'Erro ao conectar: ' + E.Message
+      );
+
+   end;
+
+end;
+
+{$R *.dfm}
+
+procedure TfrmMain.FormCreate(Sender: TObject);
+begin
+
+    FCameraStream := TRtspStream.Create as IRtspStream;
+
+    FSidebar := TSideBarFrame.Create(Self, FCameraStream, PanelStreamArea.Handle);
+
+    FSidebar.Parent := pnlSideBarContent;
+
+    FSideBar.ApplyStyle;
+    SetRoundedCorners(pnlMonitor);
+    SetRoundedCorners(pnlStatus);
+    SetRoundedCorners(PanelStreamArea);
+
+end;
+
+end.

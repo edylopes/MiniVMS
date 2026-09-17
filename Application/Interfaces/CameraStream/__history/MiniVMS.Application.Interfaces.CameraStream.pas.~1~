@@ -1,0 +1,24 @@
+unit MiniVMS.Aplication.Interfaces.CameraStream;
+
+interface
+
+uses
+  Winapi.Windows;
+
+type
+  ICameraStream = interface
+    ['{D13632AB-A391-4A85-A7A7-AB378401294B}']
+
+    procedure Connect(
+      const ASource: string;
+      AHandle: HWND
+    );
+
+    procedure Disconnect;
+
+    function IsConnected: Boolean;
+  end;
+
+implementation
+
+end.

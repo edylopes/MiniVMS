@@ -1,7 +1,7 @@
 object SideBarFrame: TSideBarFrame
   Left = 0
   Top = 0
-  Width = 328
+  Width = 330
   Height = 632
   Color = 2035976
   ParentBackground = False
@@ -17,7 +17,7 @@ object SideBarFrame: TSideBarFrame
     Margins.Right = 0
     Margins.Bottom = 0
     BevelOuter = bvNone
-    Color = 2824717
+    Color = 2300693
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -17
@@ -36,9 +36,9 @@ object SideBarFrame: TSideBarFrame
       Margins.Right = 0
       Margins.Bottom = 0
       BevelOuter = bvNone
-      Color = 2824717
+      Color = 2300693
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
+      Font.Color = clWindow
       Font.Height = -15
       Font.Name = 'Segoe UI'
       Font.Style = []
@@ -51,30 +51,30 @@ object SideBarFrame: TSideBarFrame
       object laberPort: TLabel
         Left = 16
         Top = 199
-        Width = 89
-        Height = 15
+        Width = 95
+        Height = 17
         Caption = 'Porta (Opcional)'
         Color = 3812124
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clSnow
-        Font.Height = -12
+        Font.Height = -13
         Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
+        Font.Style = []
         ParentColor = False
         ParentFont = False
       end
       object passwordLabel: TLabel
         Left = 168
         Top = 136
-        Width = 34
-        Height = 15
+        Width = 35
+        Height = 17
         Caption = 'Senha'
         Color = 3746333
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clSnow
-        Font.Height = -12
+        Font.Height = -13
         Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
+        Font.Style = []
         ParentColor = False
         ParentFont = False
       end
@@ -82,44 +82,44 @@ object SideBarFrame: TSideBarFrame
         Left = 16
         Top = 270
         Width = 55
-        Height = 15
+        Height = 17
         Caption = 'URL RTSP'
         Color = clWhite
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16315632
-        Font.Height = -12
+        Font.Color = clWhite
+        Font.Height = -13
         Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
+        Font.Style = []
         ParentColor = False
         ParentFont = False
       end
       object ipLabel: TLabel
         Left = 15
         Top = 75
-        Width = 72
-        Height = 15
+        Width = 76
+        Height = 17
         Caption = 'IP / Dom'#237'nio '
         Color = 3812124
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clSnow
-        Font.Height = -12
+        Font.Height = -13
         Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
+        Font.Style = []
         ParentColor = False
         ParentFont = False
       end
       object userLabel: TLabel
         Left = 16
         Top = 136
-        Width = 42
-        Height = 15
+        Width = 45
+        Height = 17
         Caption = 'Usu'#225'rio'
         Color = 3812124
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clSnow
-        Font.Height = -12
+        Font.Height = -13
         Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
+        Font.Style = []
         ParentColor = False
         ParentFont = False
       end
@@ -137,7 +137,7 @@ object SideBarFrame: TSideBarFrame
         BevelEdges = []
         BevelOuter = bvNone
         BiDiMode = bdLeftToRight
-        Color = 3547668
+        Color = 3550246
         Ctl3D = False
         Padding.Left = 8
         Padding.Top = 10
@@ -158,7 +158,7 @@ object SideBarFrame: TSideBarFrame
           Margins.Bottom = 0
           AutoSelect = False
           BorderStyle = bsNone
-          Color = 3547668
+          Color = 3550246
           Ctl3D = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
@@ -181,7 +181,7 @@ object SideBarFrame: TSideBarFrame
         Margins.Bottom = 0
         AutoSize = True
         BevelOuter = bvNone
-        Color = 3547668
+        Color = 3550246
         Ctl3D = False
         Padding.Left = 8
         Padding.Top = 10
@@ -201,7 +201,7 @@ object SideBarFrame: TSideBarFrame
           Margins.Bottom = 0
           AutoSelect = False
           BorderStyle = bsNone
-          Color = 3547668
+          Color = 3550246
           Ctl3D = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
@@ -224,7 +224,7 @@ object SideBarFrame: TSideBarFrame
         Anchors = [akLeft, akTop, akRight, akBottom]
         AutoSize = True
         BevelOuter = bvNone
-        Color = 3547668
+        Color = 3550246
         Ctl3D = False
         Padding.Left = 8
         Padding.Top = 10
@@ -244,7 +244,7 @@ object SideBarFrame: TSideBarFrame
           Margins.Bottom = 0
           AutoSelect = False
           BorderStyle = bsNone
-          Color = 3547668
+          Color = 3550246
           Ctl3D = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
@@ -268,7 +268,7 @@ object SideBarFrame: TSideBarFrame
         Anchors = [akLeft, akTop, akRight, akBottom]
         AutoSize = True
         BevelOuter = bvNone
-        Color = 3547668
+        Color = 3550246
         Ctl3D = False
         Padding.Left = 8
         Padding.Top = 10
@@ -289,7 +289,7 @@ object SideBarFrame: TSideBarFrame
           Margins.Bottom = 0
           AutoSelect = False
           BorderStyle = bsNone
-          Color = 3547668
+          Color = 3550246
           Ctl3D = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
@@ -303,8 +303,8 @@ object SideBarFrame: TSideBarFrame
       end
       object PanelPort: TPanel
         AlignWithMargins = True
-        Left = 15
-        Top = 217
+        Left = 16
+        Top = 219
         Width = 137
         Height = 40
         Margins.Left = 0
@@ -313,7 +313,7 @@ object SideBarFrame: TSideBarFrame
         Margins.Bottom = 0
         AutoSize = True
         BevelOuter = bvNone
-        Color = 3547668
+        Color = 3550246
         Ctl3D = False
         Padding.Left = 8
         Padding.Top = 10
@@ -333,7 +333,7 @@ object SideBarFrame: TSideBarFrame
           Margins.Bottom = 0
           AutoSelect = False
           BorderStyle = bsNone
-          Color = 3547668
+          Color = 3550246
           Ctl3D = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWhite
@@ -351,13 +351,14 @@ object SideBarFrame: TSideBarFrame
         Width = 259
         Height = 41
         BevelOuter = bvNone
-        ParentColor = True
+        Color = 2300693
+        ParentBackground = False
         TabOrder = 5
         object LabelConection: TLabel
-          Left = 54
+          Left = 35
           Top = 8
-          Width = 163
-          Height = 20
+          Width = 185
+          Height = 23
           Margins.Left = 0
           Margins.Top = 0
           Margins.Right = 0
@@ -366,10 +367,13 @@ object SideBarFrame: TSideBarFrame
           Caption = 'Conex'#227'o de Dispositivos'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindow
-          Font.Height = -15
+          Font.Height = -17
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
+          ParentShowHint = False
+          ShowHint = False
+          Transparent = True
         end
         object ImgConnection: TImage
           Left = 0
@@ -408,7 +412,7 @@ object SideBarFrame: TSideBarFrame
       Height = 57
       BevelOuter = bvNone
       Caption = 'Conectar'
-      Color = 16743710
+      Color = 3767604
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clMenu
       Font.Height = -16
@@ -417,15 +421,16 @@ object SideBarFrame: TSideBarFrame
       ParentBackground = False
       ParentFont = False
       TabOrder = 1
+      OnClick = PanelActiveDeviceClick
     end
     object PanelDesactiveDevice: TPanel
-      Left = 159
+      Left = 168
       Top = 344
-      Width = 145
+      Width = 137
       Height = 57
       BevelOuter = bvNone
       Caption = 'Desconectar'
-      Color = 3547668
+      Color = 3550246
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhitesmoke
       Font.Height = -16
@@ -434,19 +439,26 @@ object SideBarFrame: TSideBarFrame
       ParentBackground = False
       ParentFont = False
       TabOrder = 2
+      OnClick = PanelDesactiveDeviceClick
     end
   end
   object PanelLastConections: TPanel
-    Left = 0
-    Top = 432
-    Width = 324
-    Height = 185
+    Left = 4
+    Top = 433
+    Width = 320
+    Height = 184
     Margins.Left = 0
     Margins.Top = 0
     Margins.Right = 0
     BevelOuter = bvNone
-    Color = 2824717
+    Color = 2300693
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Style = []
     ParentBackground = False
+    ParentFont = False
     TabOrder = 1
   end
 end

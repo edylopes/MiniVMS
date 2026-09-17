@@ -137,7 +137,9 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Utils\MiniVMS.Utils.UI.pas"/>
-        <DCCReference Include="Components\MiniVMS.Components.EditBase.pas"/>
+        <DCCReference Include="Application\Interfaces\CameraStream\MiniVMS.Application.Interfaces.CameraStream.pas"/>
+        <DCCReference Include="Application\Interfaces\RtspStream\MiniVMS.Application.Interfaces.RtspStream.pas"/>
+        <DCCReference Include="Infrastructure\RtspStream\MiniVMS.Infrastructure.RtspStream.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

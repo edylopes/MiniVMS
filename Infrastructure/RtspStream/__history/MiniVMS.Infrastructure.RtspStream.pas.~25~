@@ -1,0 +1,51 @@
+unit MiniVMS.Infrastructure.RtspStream;
+
+interface
+
+uses
+  System.Classes,
+  Winapi.Windows,
+  MiniVMS.Application.Interfaces.RtspStream,
+  MiniVMS.Application.Interfaces.CameraStream,
+  System.SysUtils;
+
+type
+  TRtspStream = class(TInterfacedObject, ICameraStream)
+  private
+    FConnected: Boolean;
+
+  public
+    procedure Connect(
+      const ASource: string;
+      AHandle: HWND
+    );
+
+    procedure Disconnect;
+
+    function IsConnected: Boolean;
+  end;
+
+implementation
+
+procedure TRtspStream.Connect(
+  const ASource: string;
+  AHandle: HWND
+);
+
+begin
+  if Url.IsEmpty then
+    raise Exception.Create('URL RTSP não informada.');
+  FConnected := True;
+end;
+
+procedure TRtspStream.Disconnect;
+begin
+  FConnected := False;
+end;
+
+function TRtspStream.IsConnected: Boolean;
+begin
+  Result := FConnected;
+end;
+
+end.

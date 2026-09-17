@@ -7,8 +7,8 @@ object frmMain: TfrmMain
   Margins.Bottom = 0
   BiDiMode = bdLeftToRight
   Caption = 'Mini VMS'
-  ClientHeight = 712
-  ClientWidth = 1217
+  ClientHeight = 704
+  ClientWidth = 1219
   Color = 2035976
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -24,21 +24,21 @@ object frmMain: TfrmMain
   OnCreate = FormCreate
   TextHeight = 21
   object pnlMonitor: TPanel
-    Left = 348
-    Top = 86
-    Width = 861
-    Height = 524
+    Left = 344
+    Top = 81
+    Width = 873
+    Height = 512
     Margins.Top = 10
     BevelOuter = bvNone
-    Color = 2824717
+    Color = 2300693
     ParentBackground = False
     TabOrder = 0
     TabStop = True
     object PanelStreamArea: TPanel
-      Left = 13
-      Top = 48
-      Width = 836
-      Height = 464
+      Left = 8
+      Top = 56
+      Width = 857
+      Height = 449
       Margins.Left = 0
       Margins.Top = 0
       Margins.Right = 0
@@ -48,69 +48,230 @@ object frmMain: TfrmMain
       ParentBackground = False
       TabOrder = 0
       object Panel1: TPanel
-        Left = 256
-        Top = 128
-        Width = 393
-        Height = 257
+        AlignWithMargins = True
+        Left = 240
+        Top = 116
+        Width = 369
+        Height = 205
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 0
         BevelOuter = bvNone
         Caption = 'Panel1'
         ParentColor = True
         TabOrder = 0
         object Image1: TImage
-          Left = 96
-          Top = 48
+          Left = 144
+          Top = -8
           Width = 121
-          Height = 105
+          Height = 100
+          Margins.Left = 0
+          Margins.Top = 0
+          Margins.Right = 0
+          Margins.Bottom = 0
           Picture.Data = {
             0D54536B537667477261706869633C73766720786D6C6E733D22687474703A2F
-            2F7777772E77332E6F72672F323030302F737667222077696474683D22313038
-            22206865696768743D22313038222076696577426F783D223020302032342032
-            34222066696C6C3D226E6F6E6522207374726F6B653D22236666666666662220
-            7374726F6B652D77696474683D223222207374726F6B652D6C696E656361703D
-            22726F756E6422207374726F6B652D6C696E656A6F696E3D22726F756E642220
-            636C6173733D226C7563696465206C75636964652D766964656F223E3C706174
-            6820643D226D313620313320352E32323320332E343832612E352E3520302030
-            2030202E3737372D2E34313656372E3837612E352E352030203020302D2E3735
-            322D2E3433324C31362031302E35222F3E3C7265637420783D22322220793D22
-            36222077696474683D22313422206865696768743D223132222072783D223222
-            2F3E3C2F7376673E}
+            2F7777772E77332E6F72672F323030302F737667222077696474683D22313234
+            22206865696768743D22313234222076696577426F783D223020302032342032
+            34222066696C6C3D226E6F6E6522207374726F6B653D22233739383539422220
+            7374726F6B652D77696474683D22302E35383036343531363132393033323236
+            22207374726F6B652D6C696E656361703D22726F756E6422207374726F6B652D
+            6C696E656A6F696E3D22726F756E642220636C6173733D226C7563696465206C
+            75636964652D766964656F223E3C7061746820643D226D313620313320352E32
+            323320332E343832612E352E35203020302030202E3737372D2E34313656372E
+            3837612E352E352030203020302D2E3735322D2E3433324C31362031302E3522
+            2F3E3C7265637420783D22322220793D2236222077696474683D223134222068
+            65696768743D223132222072783D2232222F3E3C2F7376673E}
         end
+        object videNone: TLabel
+          Left = 144
+          Top = 92
+          Width = 105
+          Height = 30
+          Margins.Left = 0
+          Margins.Top = 0
+          Margins.Right = 0
+          Margins.Bottom = 0
+          Caption = 'Sem V'#237'deo'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhitesmoke
+          Font.Height = -21
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object editWatting: TLabel
+          Left = 64
+          Top = 122
+          Width = 289
+          Height = 23
+          Margins.Left = 0
+          Margins.Top = 0
+          Margins.Right = 0
+          Margins.Bottom = 0
+          Caption = 'Aguardando conex'#227'o com a camera...'
+          Color = clSilver
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clGray
+          Font.Height = -17
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+    end
+    object PanelMonitorVideo: TPanel
+      Left = 8
+      Top = 0
+      Width = 201
+      Height = 45
+      BevelOuter = bvNone
+      Color = 2300693
+      ParentBackground = False
+      TabOrder = 1
+      object Image3: TImage
+        Left = 0
+        Top = 12
+        Width = 49
+        Height = 41
+        Picture.Data = {
+          0D54536B537667477261706869633C73766720786D6C6E733D22687474703A2F
+          2F7777772E77332E6F72672F323030302F737667222077696474683D22343022
+          206865696768743D223430222076696577426F783D2230203020323420323422
+          2066696C6C3D226E6F6E6522207374726F6B653D222332343934464322207374
+          726F6B652D77696474683D22312E3822207374726F6B652D6C696E656361703D
+          22726F756E6422207374726F6B652D6C696E656A6F696E3D22726F756E642220
+          636C6173733D226C7563696465206C75636964652D6D6F6E69746F72223E3C72
+          6563742077696474683D22323022206865696768743D2231342220783D223222
+          20793D2233222072783D2232222F3E3C6C696E652078313D2238222078323D22
+          3136222079313D223231222079323D223231222F3E3C6C696E652078313D2231
+          32222078323D223132222079313D223137222079323D223231222F3E3C2F7376
+          673E}
+      end
+      object LabelMonitorVideo: TLabel
+        Left = 44
+        Top = 12
+        Width = 134
+        Height = 21
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 0
+        Caption = 'Monitor de Video'
+        Color = 2497557
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindow
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
       end
     end
   end
   object pnlHeader: TPanel
-    Left = 0
-    Top = -29
+    Left = -8
+    Top = -32
     Width = 1225
-    Height = 105
+    Height = 103
     Margins.Left = 0
     Margins.Top = 0
     Margins.Right = 0
     Margins.Bottom = 0
     BevelOuter = bvNone
-    Caption = 'HEADER'
-    Color = 2824717
+    Color = 2300693
     Ctl3D = True
     ParentBackground = False
     ParentCtl3D = False
     TabOrder = 1
+    object PanalHeaderLeft: TPanel
+      Left = 8
+      Top = 32
+      Width = 217
+      Height = 73
+      Margins.Left = 0
+      Margins.Top = 0
+      Margins.Right = 0
+      Margins.Bottom = 0
+      BevelOuter = bvNone
+      Color = 2300693
+      ParentBackground = False
+      TabOrder = 0
+      object Image2: TImage
+        Left = 12
+        Top = 15
+        Width = 69
+        Height = 54
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 0
+        Margins.Bottom = 0
+        Picture.Data = {
+          0D54536B537667477261706869633C73766720786D6C6E733D22687474703A2F
+          2F7777772E77332E6F72672F323030302F737667222077696474683D22363022
+          206865696768743D223630222076696577426F783D2230203020323420323422
+          2066696C6C3D226E6F6E6522207374726F6B653D222331353832463422207374
+          726F6B652D77696474683D22302E3822207374726F6B652D6C696E656361703D
+          22726F756E6422207374726F6B652D6C696E656A6F696E3D22726F756E642220
+          636C6173733D226C7563696465206C75636964652D74762D6D696E696D616C2D
+          706C6179223E3C7061746820643D224D31352E30333320392E3434612E363437
+          2E363437203020302031203020312E31326C2D342E30363520322E333532612E
+          3634352E3634352030203020312D2E3936382D2E353656372E363438612E3634
+          352E363435203020302031202E3936372D2E35367A222F3E3C7061746820643D
+          224D37203231683130222F3E3C726563742077696474683D2232302220686569
+          6768743D2231342220783D22322220793D2233222072783D2232222F3E3C2F73
+          76673E}
+      end
+      object TLabel
+        Left = 70
+        Top = 14
+        Width = 106
+        Height = 31
+        Caption = 'Mini VMS'
+        Color = 2366229
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -23
+        Font.Name = 'Segoe UI'
+        Font.Pitch = fpVariable
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Label1: TLabel
+        Left = 70
+        Top = 43
+        Width = 130
+        Height = 15
+        Caption = 'Vizualiza'#231#227'o de cameras '
+        Color = 2628885
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentColor = False
+        ParentFont = False
+      end
+    end
   end
   object pnlStatus: TPanel
-    Left = 349
-    Top = 616
-    Width = 860
-    Height = 89
+    Left = 344
+    Top = 599
+    Width = 873
+    Height = 98
     BevelOuter = bvNone
-    Caption = 'Status'
-    Color = 2824717
+    Color = 2300693
     ParentBackground = False
     TabOrder = 2
   end
   object pnlSidebarContent: TPanel
     Left = 12
     Top = 81
-    Width = 333
-    Height = 619
+    Width = 329
+    Height = 616
     Margins.Left = 0
     Margins.Top = 0
     Margins.Right = 0
